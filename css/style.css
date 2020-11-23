@@ -70,11 +70,11 @@
 
 .menu {
     display: flex;
+    margin-left: auto;
 }
 
 .menu-list {
     display: flex;
-    margin-left: auto;
 }
 
 .menu-list-item {
@@ -488,7 +488,7 @@ li {
     text-transform: uppercase;
 }
 
-.tags-list-item:nth-child(1):hover {
+.tags-list-item:hover {
     border: 3px solid #b59f5b;
 }
 
@@ -569,6 +569,7 @@ li {
     padding: 45px 19px 19px 19px;
     max-width: 345px;
     z-index: 1;
+    flex-grow: 2;
 }
 
 .product__title {
@@ -583,9 +584,10 @@ li {
     font-weight: normal;
     line-height: 1.5;
     font-family: Open Sans, Arial, sans-serif;
+
 }
 
-.product__text__hover:hover {
+.product-description-link:hover {
     font-weight: bold;
 }
 
@@ -713,7 +715,7 @@ li {
 }
 
 #menu__toggle {
-    opacity: 0;
+    display: none;
 }
 
 @media (max-width: 1199px) {
@@ -731,24 +733,27 @@ li {
         z-index: 1;
     }
 
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
+    .menu__btn,
+    .menu__btn::before,
+    .menu__btn::after {
         display: block;
         position: absolute;
-        width: 100%;
+        width: 25px;
         height: 2px;
         background-color: #fff;
+        margin-left: 97%;
     }
 
-    .menu__btn > span::before {
+    .menu__btn::before {
         content: '';
         top: -8px;
+        margin-left: auto;
     }
 
-    .menu__btn > span::after {
+    .menu__btn::after {
         content: '';
         top: 8px;
+        margin-left: auto;
     }
 
     .news-card::after {
@@ -944,14 +949,15 @@ li {
 
     .popup {
         visibility: hidden;
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         overflow: hidden;
         position: fixed;
-        top: 20px;
+        top: 0;
         z-index: 3;
         display: flex;
+        font-family: open sans;
     }
 
     .popup .container-popup {
@@ -960,6 +966,12 @@ li {
         padding: 10px;
         align-self: center;
     }
+
+
+.sign-up__title {
+   font-family: open sans;
+    font-weight: bold;
+}
 
     .link {
         width: 100%;
@@ -988,7 +1000,6 @@ li {
         background-size: 10px;
         width: 100%;
         height: 40px;
-        font-family: OpenSans-Regular;
         color: #767676;
         padding: 10px 20px;
         cursor: pointer;
@@ -1010,7 +1021,7 @@ li {
     }
 
     .radio-group-text {
-        font-family: OpenSans-Regular;
+        font-family: Open Sans-Regular;
         font-size: 13px;
     }
 
@@ -1031,7 +1042,7 @@ li {
         outline: none;
     }
 
-    .feed-back_header {
+    .feed-back {
         text-transform: uppercase;
         color: black;
         font-size: 20px;
@@ -1043,7 +1054,7 @@ li {
         justify-content: center;
     }
 
-    .feed-back_header::after {
+    .feed-back::after {
         content: "";
         display: block;
         height: 3px;
@@ -1056,6 +1067,7 @@ li {
         font-size: 13px;
         font-weight: 400;
         margin-bottom: 13px;
+        margin-top: 31px;
     }
 
     .radio-group {
@@ -1071,6 +1083,7 @@ li {
         font-weight: 400;
         margin-bottom: 13px;
         display: block;
+        font-family: open sans;
     }
 
     .field-textarea {
@@ -1082,6 +1095,7 @@ li {
         margin-top: 12px;
         outline: none;
         border: 1px solid #f4f7f6;
+        padding-top: 22px;
     }
 
     .rbut {
@@ -1099,8 +1113,16 @@ li {
         cursor: pointer;
         color: #ffffff;
         background-color: #b59f5b;
+        font-family: open sans;
+        font-weight: bold;
     }
+.popup-button:hover {
+    background-color: #323232;
+    color: #fff;
+}
 
     .form-row1 {
         margin-top: 28px;
     }
+
+
