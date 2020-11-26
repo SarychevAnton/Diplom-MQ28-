@@ -118,7 +118,7 @@
     width: 100%;
     font-family: Open Sans, Arial, sans-serif;
     position: relative;
-    min-width: 1200px;
+/*    min-width: 1200px;*/
 }
 
 .post-name {
@@ -565,7 +565,7 @@ li {
     box-sizing: border-box;
     border: 3px solid #b59f5b;
     margin-top: -35px;
-    height: 263px;
+/*    height: 263px;*/
     padding: 45px 19px 19px 19px;
     max-width: 345px;
     z-index: 1;
@@ -768,7 +768,7 @@ li {
 
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
     .trend {
-        width: 49.7%;
+        width: 49.5%;
     }
 
     .trend:nth-child(2n) {
@@ -885,7 +885,7 @@ li {
     .trend {
         width: 100vw;
     }
-
+ 
     .trends {
         min-width: 340px;
     }
@@ -971,6 +971,7 @@ li {
 .sign-up__title {
    font-family: open sans;
     font-weight: bold;
+    font-size: 20px;
 }
 
     .link {
@@ -1021,7 +1022,7 @@ li {
     }
 
     .radio-group-text {
-        font-family: Open Sans-Regular;
+        font-family: open sans;
         font-size: 13px;
     }
 
@@ -1067,8 +1068,11 @@ li {
         font-size: 13px;
         font-weight: 400;
         margin-bottom: 13px;
-        margin-top: 31px;
     }
+
+.form-row-text {
+    margin-top: 31px;
+}
 
     .radio-group {
         font-size: 13px;
@@ -1087,21 +1091,15 @@ li {
     }
 
     .field-textarea {
+        box-sizing: border-box;
         background-color: #f4f7f6;
         height: 131px;
         width: 329px;
-        border: none;
         resize: none;
         margin-top: 12px;
         outline: none;
         border: 1px solid #f4f7f6;
-        padding-top: 22px;
-    }
-
-    .rbut {
-        width: 30px;
-        height: 30px;
-        object-fit: cover;
+        padding: 20px;
     }
 
     .popup-button {
